@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e27fdb3a-6244-4b43-ba2b-b01eacf91696">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="105"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tarif_kontrakan]]>
+	</queryString>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kamar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tarif_kamar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="detail_kamar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="26" uuid="fc2a3492-f4ff-4b64-b618-1f27f3c03cd7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[PANDUAN INFORMASI KONTRAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="802" height="26" uuid="2af81832-b4af-4a6e-b581-1e300e880a8f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[NUR RESIDENCE MEKARWANGI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="802" height="26" uuid="255f924e-29f0-4b24-8508-1143daa3622b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[INFORMASI TARIF ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="5" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="-1" width="802" height="1" uuid="e410b102-3870-4673-bc3b-a1231aafa13e"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="48" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="b3342e82-1f5c-4e56-9266-7198e5a9431c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="48" y="0" width="249" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="4fa49ba2-ead7-4f79-9276-de563b286943"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Jenis Kamar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="297" y="0" width="303" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="fcf6f129-9443-4924-b79f-bd38b72ecd49"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Tarif Kamar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="600" y="0" width="202" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="a8b57be2-5dcc-4555-99a0-53dfd0116ecd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Detail Kamar]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="13" width="48" height="20" uuid="5b74ce38-7c65-4e6c-8175-962dd2d6062d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="13" width="249" height="20" uuid="7639eedf-1aa6-41bf-94cd-90f818ca11ac"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_kamar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="13" width="303" height="20" uuid="27a3a6f0-6778-4795-9548-31630814be10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tarif_kamar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="13" width="202" height="36" uuid="c35c335f-b16b-44ad-b911-fa29404bd169"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_kamar}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="9b4497f6-fbe8-4c35-a42f-bdfeb768037e"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="2" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="570" y="0" width="68" height="20" uuid="5a8f33e0-abb8-4e0e-ae1a-4462dea1b8f6"/>
+				<text><![CDATA[Dicetak Pada :]]></text>
+			</staticText>
+			<textField pattern="yyyy.MM.dd G &apos;at&apos; HH:mm:ss z">
+				<reportElement x="638" y="0" width="164" height="20" uuid="d6666ab3-6853-4dbb-a710-688c60a5bf4e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="617d1aeb-19cb-4d87-8808-597bee54bc46"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

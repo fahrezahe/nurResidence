@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddb2659a-f8f7-44ca-9590-14dfb681a6dd">
+	<property name="ireport.zoom" value="0.9090909090909105"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from informasi_maintenance]]>
+	</queryString>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="deskripsi_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="detail_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="26" uuid="2406a69b-493f-40b9-b847-b2d777171e0c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[LAPORAN KONTRAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="802" height="26" uuid="f272eb57-1202-46fe-8ddc-ad50227ed40a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[NUR RESIDENCE CABANG MEKARWANGI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="802" height="26" uuid="69ad6ff5-8bf6-477e-89f8-dce91fe89ef9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[INFORMASI MAINTENANCE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="802" height="1" uuid="5d2a9f61-452c-43a2-89fd-c00260eea372"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="41" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="9f5534b8-1e37-473e-9823-3b97128cdf58"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="41" y="0" width="153" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="82a7ec16-e2a7-4b34-b9d0-0083a2c37d77"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="194" y="0" width="314" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="ab8cf1ca-e5fd-40f2-8b3b-4340b02b718c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Deskripsi Maintenance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="508" y="0" width="294" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="0ade4389-d256-4481-99df-a11f215814b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Detail Maintenance]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="5" width="41" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="392d5f6e-e546-46db-80c4-272cdc10ed09"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="41" y="4" width="153" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="3877a4d1-8f23-48bc-827a-5e6c1cca1961"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_service}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="194" y="4" width="314" height="47" forecolor="#000000" backcolor="#FFFFFF" uuid="569c1e60-522e-4e21-9f1f-a929dc40ea0d"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deskripsi_service}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="518" y="4" width="284" height="47" forecolor="#000000" backcolor="#FFFFFF" uuid="efe13957-9167-4c6d-9471-dd0252ead98c"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_service}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="a8eabbc0-8041-401a-8249-3b3fc596244d"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="4" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="0" width="100" height="20" uuid="7926f35a-326c-43a4-95de-35fad60a3ed3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy.MM.dd G &apos;at&apos; HH:mm:ss z">
+				<reportElement x="638" y="0" width="164" height="20" uuid="df9a24a1-99d5-4ee7-b961-02a87411b0cd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="570" y="0" width="68" height="20" uuid="2ca1ba56-6600-450c-8bae-dea28b6d16ab"/>
+				<text><![CDATA[Dicetak Pada :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="f5a50847-fc49-4060-8713-e55f3f321ab0"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

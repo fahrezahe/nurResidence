@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a77c18ec-5e27-4812-95ee-b45e8b64c1cf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pengeluaran]]>
+	</queryString>
+	<field name="id_pengeluaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bulan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenispengeluaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlahpengeluaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pembuat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="catatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="2" width="802" height="26" uuid="a5d8fbb4-a9cc-4797-97f1-ec7987834132"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[LAPORAN KONTRAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="28" width="802" height="26" uuid="86881c03-335c-49c1-ad47-cba406b66db9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[DATA PENGELUARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="54" width="802" height="26" uuid="d545a04f-e9ff-476d-8cee-e887fa24e4df"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[NUR RESIDENCE CABANG MEKARWANGI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="12" splitType="Stretch">
+			<line>
+				<reportElement x="-2" y="0" width="802" height="1" uuid="ef04f82d-2e41-4e37-9beb-a798e6606b91"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="90" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="b43e7660-264f-4b55-9144-42541c28b78d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ID Pengeluaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="90" y="0" width="133" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="8e668bf7-4cef-4110-8ec8-3e195a0f9eed"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Bulan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="223" y="0" width="133" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="4fd81f0e-9160-491e-a788-a85335043fa7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Pengeluaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="356" y="0" width="133" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="e2747931-8000-490d-97f6-5a4b6784232d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jumlah Pengeluaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="489" y="0" width="133" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="6b806e22-a697-48fc-a347-32e09322993f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Pembuat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="622" y="0" width="180" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="a5d9b8c6-2576-49a4-b846-54c21142d0ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Catatan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="5" width="90" height="20" uuid="b8e543f0-becb-4f21-af2c-a6c6d2b09da3"/>
+				<textFieldExpression><![CDATA[$F{id_pengeluaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="5" width="133" height="20" uuid="fb6d4491-8936-42dc-b359-2b689dc9dee7"/>
+				<textFieldExpression><![CDATA[$F{bulan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="5" width="133" height="20" uuid="da5a02e9-06b9-4fb8-ba52-e526db8a83cb"/>
+				<textFieldExpression><![CDATA[$F{jenispengeluaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="5" width="133" height="20" uuid="b12ff31d-a65c-4a0f-88bc-d3fcd39bf6ad"/>
+				<textFieldExpression><![CDATA[$F{jumlahpengeluaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="5" width="120" height="20" uuid="46953ef7-456c-4f62-ba57-cef4e7baf1bc"/>
+				<textFieldExpression><![CDATA[$F{pembuat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="622" y="5" width="180" height="34" uuid="b03cdf13-6a3a-4fbe-8ab1-faa6dace37ca"/>
+				<textFieldExpression><![CDATA[$F{catatan}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="0" width="800" height="1" uuid="21d9c295-3bc3-4cfb-bff3-310e8009e7c9"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="3" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="570" y="0" width="68" height="20" uuid="1a32a39a-4e40-471b-8c54-416b829c313c"/>
+				<text><![CDATA[Dicetak Pada :]]></text>
+			</staticText>
+			<textField pattern="yyyy.MM.dd G &apos;at&apos; HH:mm:ss z">
+				<reportElement x="638" y="0" width="164" height="20" uuid="7ea5b43b-9167-449a-aa52-31fd9a928768"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="800" height="1" uuid="eb48de20-27d8-476e-82b1-1296b05240c8"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

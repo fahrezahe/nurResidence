@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b8112a4d-8d8f-4759-8e56-c228375e7cf1">
+	<property name="ireport.zoom" value="2.8531167061100033"/>
+	<property name="ireport.x" value="1436"/>
+	<property name="ireport.y" value="61"/>
+	<queryString language="SQL">
+		<![CDATA[select * from customer]]>
+	</queryString>
+	<field name="id_customer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nohp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jeniskl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="26" uuid="2428b8d2-6c33-4346-add8-84a057f95c1f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[LAPORAN KONTRAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="802" height="26" uuid="b7646159-9a4c-41d2-a70e-3b4f2c3c9f7a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[DATA CUSTOMER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="800" height="26" uuid="f1e09718-917f-45fa-8a36-64396c4dca30"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[NUR RESIDENCE CABANG MEKARWANGI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="10" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="bfc1264f-961b-48bb-bb7e-bd2a64e2f760"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="160" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="c4933105-e03f-41b3-b31e-e2d2176a5ef6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Id Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="160" y="0" width="160" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="69927964-ae64-468c-94fe-075704f53f54"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="320" y="0" width="160" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="54c8e66a-2cc5-4b9b-b474-c77a9fd4288d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nomor Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="0" width="160" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="f00718b2-7e0a-4e02-bfa0-f4a2e5bb4973"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="640" y="0" width="160" height="20" forecolor="#FFFFFF" backcolor="#403D3D" uuid="0d63f62d-8d72-45bf-828d-294ca769d17c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="5" width="160" height="20" uuid="27df3673-4c67-40de-8af4-78a7ed987ec0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="5" width="160" height="20" uuid="6f7ae8f6-10ec-42e6-b331-6710bb15c0d4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="5" width="160" height="20" uuid="b599c58d-9785-4fcc-b1c3-52a1cbe52e85"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nohp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="5" width="160" height="20" uuid="7dfa5c68-1d0c-4124-bce0-d9ab20adf6ce"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jeniskl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="5" width="160" height="20" uuid="100fa742-11df-4c1d-ba7b-f444670519cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="800" height="1" uuid="1b87203d-fe76-4f6d-8db5-dad201656cc5"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="800" height="1" uuid="a36260b2-bc22-4f67-b9ac-f3433d28fb42"/>
+			</line>
+			<staticText>
+				<reportElement x="570" y="2" width="68" height="20" uuid="cdc2c5d2-5334-4cc0-8881-d700e0d38867"/>
+				<text><![CDATA[Dicetak Pada :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="14" y="2" width="100" height="20" uuid="4849f7bc-a65f-43ef-b089-884b62f54186"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy.MM.dd G &apos;at&apos; HH:mm:ss z">
+				<reportElement x="638" y="2" width="164" height="20" uuid="6ce65d1f-34e3-4486-be73-6e832f2379fc"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
